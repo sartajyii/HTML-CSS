@@ -4,11 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	
@@ -43,16 +40,6 @@
       <li>
         <a href="#" class="submenu"><img src="images/report.svg" alt="">Reports </a>
       </li>
-      <!-- <li>
-        <div class="item">
-          <a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
-          <div class="sub-menu">
-            <a href="#" class="sub-item">Sub Item 01</a>
-            <a href="#" class="sub-item">Sub Item 02</a>
-            <a href="#" class="sub-item">Sub Item 03</a>
-          </div>
-        </div>
-      </li> -->
     </ul>
   </aside>
 
@@ -68,7 +55,7 @@
     </button> -->
     
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="#"><img src="images/ball.svg" alt></a>
             </li>
@@ -85,10 +72,225 @@
   <section id="content-wrapper">
       <div class="row">
         <div class="col-lg-12">
-          <h2 class="content-title">Test</h2>
-          <p>Lorem ipsum...</p>
+          <div class="btn-section">
+            <button type="button"
+              class="btn home-btn"><img src="./images/Home.svg" alt=""></button>
+              <button type="button" 
+              class="btn home-btn setting-btn"><img src="./images/setting.png" alt="">Settings</button>
+              <button type="button" 
+              class="btn home-btn setting-btn general-setting"><img src="./images/setting-2.png" alt="">General Settings</button>           
+          </div>
+        </div>
+      </div> 
+      <div class="row">
+      <div class="col-lg-12">
+        <div class="heading-section">
+          <h2>General Setting</h2>
+          <button class="btn-save">save</button>
+        </div>
+        <div class="tab-section">
+          <div class="">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-primary fw-semibold active position-relative" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="./images/setting-2.svg"  alt="">General</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-primary fw-semibold position-relative" id="pills-setting-tab" data-bs-toggle="pill" data-bs-target="#pills-setting" type="button" role="tab" aria-controls="pills-setting" aria-selected="false"><img src="./images/report-icon.svg"  alt=""> Report Setting</button>
+              </li>
+              <li class="nav-item" role="presentation">
+   <button class="nav-link text-primary fw-semibold position-relative" id="pills-period-setting-tab" data-bs-toggle="pill" data-bs-target="#pills-period-setting" type="button" role="tab" aria-controls="pills-period-setting" aria-selected="false"><img src="./images/workperiod.svg"  alt=""> Work Period Setting</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> <img src="./images/onlineorder.svg"  alt=""> Online Ordering Integration</button>
+              </li>
+                
+    
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="./images/globelsetting.svg"  alt=""> Global Setting</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="./images/paymentsetting.svg"  alt=""> Payment Setting</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="./images/cashdrop.svg"  alt=""> Cash Drop / Expense</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> <img src="./images/notification-bing.svg"  alt=""> Notification</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="./images/empolyee-icon.svg"  alt=""> Employee Setting</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> <img src="./images/kitchen.svg"  alt=""> Kitchen Display</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="./images/zomato.svg"  alt="">  Swiggy-Zomato Setting</button>
+      </li>
+            </ul>
+            <div class="tab-content p-3" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="">
+                  <div class="row">
+                    <div class="col-md-3 left-tabs">
+                      <ul class="nav nav-pills flex-column sub-tab" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" id="home-tab" data-bs-toggle="pill" href="#business" role="tab" aria-controls="Business" aria-selected="true"> <img src="./images/business.png" alt="">Business Detail </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="some-screen-tab" data-bs-toggle="pill" href="#some-screen" role="tab" aria-controls="some-screen" aria-selected="false"> <img src="./images/homescreen.png" alt=""> POS Home Screen</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="login-options-tab" data-bs-toggle="pill" href="#login-options" role="tab" aria-controls="login-options" aria-selected="false"><img src="./images/login.png" alt=""> Login Options</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="category-menu-tab" data-bs-toggle="pill" href="#category-menu" role="tab" aria-controls="category-menu" aria-selected="false"> <img src="./images/category.png" alt=""> Category & Menu</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="direct-sales-tab" data-bs-toggle="pill" href="#direct-sales" role="tab" aria-controls="direct-sales" aria-selected="false"><img src="./images/sales.png" alt=""> Direct Sales</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="wake-lock-tab" data-bs-toggle="pill" href="#wake-lock" role="tab" aria-controls="wake-lock" aria-selected="false"><img src="./images/lock-reset.png" alt=""> Wake Lock</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="wake-lock-tab" data-bs-toggle="pill" href="#qr-order" role="tab" aria-controls="qr-order" aria-selected="false"> <img src="./images/qr-icon.png" alt=""> QR Order</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="printer-tab" data-bs-toggle="pill" href="#printer" role="tab" aria-controls="printer" aria-selected="false"><img src="./images/printer.png" alt=""> Printer</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="open-tickets-tab" data-bs-toggle="pill" href="#open-tickets" role="tab" aria-controls="open-tickets" aria-selected="false"> <img src="./images/ticket.png" alt=""> Open Tickets</a>
+                        </li>
+                        
+                        
+                      </ul>
+                    </div>
+                
+                    <!-- Right Side Content -->
+                    <div class="col-md-9 content-area">
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="business" role="tabpanel" aria-labelledby="home-tab">
+                          <h4><img src="./images/business.png" alt=""> Business Details</h4>
+                          <form class="business-form">
+                            <div class="row mb-3">
+                              <div class="col-md-6">
+                                <label for="firstName" class="form-label">Business Name<sup>*</sup></label>
+                                <input type="text" class="form-control" id="firstName" placeholder="FoodShip">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="lastName" class="form-label">Business email <sup>*</sup></label>
+                                <input type="text" class="form-control" id="lastName" placeholder="radhika.foodship@gmail.com">
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col-md-6">
+                                <label for="firstName" class="form-label">Business Address <sup>*</sup></label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Splash Planet | 1001 Grove">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="lastName" class="form-label">Business Phone<sup>*</sup></label>
+                                <input type="text" class="form-control" id="lastName" placeholder="000000000">
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col-md-6">
+                                <label for="firstName" class="form-label">Select Currency</label>
+                                <select class="form-select" aria-label="Default select example">
+                                  <option selected>$</option>
+                                  <option value="1">$</option>
+                                  
+                                </select>
+                              </div>
+                              <div class="col-md-6">
+                                <label for="lastName" class="form-label">Upload Logo <sup>*</sup></label>
+                                <div class="file-upload">                                
+                                  <label for="upload" class="file-upload__label"><img src="./images/upload.png" alt="">upload</label>
+                                  <input id="upload" class="file-upload__input" type="file" name="file-upload">
+                              </div>
+                              <div class="warning-text">
+                                <p class="">(Image Size 1273*272 Px)</p>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col-md-3">
+                                <label>Google Captcha</label>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="radio-section">
+                                    <div class="form-check disabled">
+                                      <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+                                      <label class="form-check-label" for="flexRadioDisabled">
+                                        Disabled 
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Enable
+                                    </label>
+                                    </div>
+                                    
+                                  </div>
+                                  </div>
+                                  <p class="radio-section-text"><img src="./images/caution-mark.png" alt=""> Note : This information will be used on dockets, receipts and invoice.</p>
+                                </div>
+                          </form>
+                        </div>
+                        <div class="tab-pane fade" id="some-screen" role="tabpanel" aria-labelledby="some-screen-tab">
+                          <h4>screen Tab</h4>
+                          <p>This is the content for the Profile tab.</p>
+                        </div>
+                        <div class="tab-pane fade" id="login-options" role="tabpanel" aria-labelledby="login-options-tab">
+                          <h4>login Tab</h4>
+                          <p>This is the content for the Messages tab.</p>
+                        </div>
+                        <div class="tab-pane fade" id="category-menu" role="tabpanel" aria-labelledby="category-menu-tab">
+                          <h4>category Tab</h4>
+                          <p>This is the content for the Settings tab.</p>
+                        </div>
+                        <div class="tab-pane fade" id="direct-sales" role="tabpanel" aria-labelledby="direct-sales-tab">
+                          <h4>direct Tab</h4>
+                          <p>This is the content for the Settings tab.</p>
+                        </div>
+                        <div class="tab-pane fade" id="wake-lock" role="tabpanel" aria-labelledby="wake-lock-tab">
+                          <h4>wake Tab</h4>
+                          <p>This is the content for the Settings tab.</p>
+                        </div>
+                        <div class="tab-pane fade" id="qr-order" role="tabpanel" aria-labelledby="qr-order-tab">
+                          <h4>qr-order Tab</h4>
+                          <p>This is the content for the Settings tab.</p>
+                        </div>
+                        <div class="tab-pane fade" id="printer" role="tabpanel" aria-labelledby="printer-tab">
+                          <h4>printer Tab</h4>
+                          <p>This is the content for the Settings tab.</p>
+                        </div>
+                        <div class="tab-pane fade" id="open-tickets" role="tabpanel" aria-labelledby="open-tickets-tab">
+                          <h4>open-tickets Tab</h4>
+                          <p>This is the content for the Settings tab.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-setting" role="tabpanel" aria-labelledby="pills-setting-tab">
+                <h2> Report Setting</h2>
+                <p> Praesent eu dignissim arcu, et pretium lorem. Sed accumsan ante non rhoncus efficitur. Curabitur vitae enim sit amet diam lacinia viverra quis quis odio. Suspendisse potenti. Sed rutrum erat dui, sit amet tempor sapien mattis vel. Donec ac dictum nibh. Nunc aliquet libero non lobortis auctor. Praesent tristique orci ac mi sollicitudin, sed lobortis velit laoreet. Donec ut hendrerit dolor.</p>
+
+              </div>
+              <div class="tab-pane fade" id="pills-period-setting" role="tabpanel" aria-labelledby="pills-period-setting-tab">
+                <h2>Work Period Setting</h2>
+                <p> Praesent eu dignissim arcu, et pretium lorem. Sed accumsan ante non rhoncus efficitur. Curabitur vitae enim sit amet diam lacinia viverra quis quis odio. Suspendisse potenti. Sed rutrum erat dui, sit amet tempor sapien mattis vel. Donec ac dictum nibh. Nunc aliquet libero non lobortis auctor. Praesent tristique orci ac mi sollicitudin, sed lobortis velit laoreet. Donec ut hendrerit dolor.</p>
+              </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      </div>
+
   </section>
 
 </div>
